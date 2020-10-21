@@ -6,7 +6,7 @@ instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlenco
 
 instance.interceptors.request.use(
   config => {
-    if(config.method === 'POST') {
+    if (config.method === 'POST') {
       config.data = JSON.stringify(config.data)
     }
     const token = sessionStorage.getItem('token')
