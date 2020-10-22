@@ -1,6 +1,6 @@
-import { Button } from 'ant-design-vue'
+import { Button, Row, Col, Icon, Menu } from 'ant-design-vue'
 
-const plugins = [Button]
+const plugins = [Button, Row, Col, Icon, Menu, Menu.Item]
 
 const antdPlugins = {
   install: function(Vue) {

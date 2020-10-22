@@ -14,11 +14,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "index" */ '../views/Index.vue'),
     children: [
       {
-        path: '/home',
+        path: '',
         name: 'Home',
         component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
       }
     ]
+  },
+  {
+    path: '*',
+    name: '404',
+    component: () => import('../views/404.vue')
   }
 ]
 

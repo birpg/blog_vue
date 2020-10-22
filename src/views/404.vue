@@ -1,18 +1,10 @@
-<!-- 首页 -->
+<!-- 404 -->
 <template>
-  <div id="app">
-    <head-nav />
-    <router-view />
-  </div>
+  <div>404</div>
 </template>
 
 <script>
-import HeadNav from '../components/HeadNav'
 export default {
-  name: 'Index',
-  components: {
-    'head-nav': HeadNav
-  },
   data() {
     return {}
   },
